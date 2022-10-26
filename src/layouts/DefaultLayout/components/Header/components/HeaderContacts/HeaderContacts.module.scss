@@ -1,0 +1,72 @@
+.contactBlock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px 52px;
+  background-color: #1D252E;
+}
+
+.phoneAndSocials {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 2px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+.line {
+  margin: 0 15px;
+}
+
+.icon:not(:last-of-type) {
+  margin-right: 12px;
+}
+
+.languageSelectWrapper {
+  position: relative;
+  color: white;
+}
+
+.language {
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+
+  > .icon {
+    margin-left: 4px;
+
+    > svg {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.languageSelect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  background: #1D252E;
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.3);
+  padding: 6px 7px;
+
+  &.opened {
+    display: block;
+  }
+}
+
+.languageItem {
+  padding: 7px 3px;
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+
+  &:not(:last-of-type) {
+    border-bottom: 1px solid #016DA6;
+  }
+}

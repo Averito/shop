@@ -1,0 +1,29 @@
+.wrapper {
+  margin-bottom: 8px;
+  background: #FFFFFF;
+  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  padding: 16px 53px 16px 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 16px;
+  color: #1D252E;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  align-self: flex-end;
+
+  > p {
+    font-weight: 700;
+    font-size: 18px;
+    color: #1D252E;
+    margin-right: 33px;
+  }
+}

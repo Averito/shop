@@ -1,0 +1,24 @@
+.button {
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+  font-size: 14px;
+  color: #2A3B45;
+  background-color: white;
+  border: none;
+  transition: color 0.3s ease;
+  cursor: pointer;
+
+  &:hover, &:focus {
+    color: #0084CA;
+  }
+
+  &:disabled {
+    color: #7E7E7E;
+  }
+}
+
+.icon {
+  transform: rotate(90deg);
+  margin-left: 12px;
+}

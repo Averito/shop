@@ -1,0 +1,31 @@
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 77px;
+}
+
+.topTitle {
+  font-weight: 400;
+  font-size: 44px;
+  color: #1D252E;
+}
+
+.content {
+  display: flex;
+
+  > div:first-of-type {
+    padding-top: 132px;
+    margin-right: 20px;
+    flex: 0 0 175px;
+  }
+
+  > div:last-of-type {
+    > p {
+      font-weight: 400;
+      font-size: 16px;
+      color: #1D252E;
+      margin-bottom: 66px;
+    }
+  }
+}

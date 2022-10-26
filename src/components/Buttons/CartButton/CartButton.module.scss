@@ -1,0 +1,47 @@
+.counterWrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid #0084CA;
+  border-radius: 4px;
+  padding: 0 8px;
+  width: fit-content;
+}
+
+.counterIncrement::after {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+}
+
+.counterIncrement, .counterDecrement {
+  position: relative;
+  font-size: 14px;
+  background-color: transparent;
+  border: none;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+
+  &::before, &:after {
+    content: '';
+    position: absolute;
+    background-color: #0084CA;
+  }
+
+  &::before {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 2px;
+  }
+}
+
+.counterText {
+  font-weight: 700;
+  font-size: 22px;
+  color: #1D252E;
+  margin: 0 13px;
+}

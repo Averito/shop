@@ -1,0 +1,33 @@
+.button {
+  cursor: pointer;
+  display: flex;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 6px 30px;
+  border: 1px solid #CD9933;
+  border-radius: 40px;
+  background-color: white;
+  color: #1D252E;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  &:hover {
+    background-color: #CD9933;
+    color: white;
+  }
+
+  &:focus {
+    border: 2px solid #CD9933;
+  }
+
+  &:disabled {
+    color: #7E7E7E;
+    background-color: white;
+    border: 1px solid #7E7E7E;
+  }
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}

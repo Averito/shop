@@ -1,0 +1,22 @@
+.dropdownItem {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  color: #0084CA;
+  cursor: pointer;
+  width: fit-content;
+
+  > .icon {
+    margin-left: 12px;
+  }
+
+  &.dropdownItemOpened > .icon > svg {
+    transform: rotate(180deg);
+  }
+
+  &:hover, &:focus {
+    text-decoration-line: underline;
+  }
+}

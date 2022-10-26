@@ -1,0 +1,42 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  padding: 8px 8px 8px 0;
+  border-bottom: 1px solid #2A3B45;
+  transition: border-bottom-color 0.3s ease;
+
+  &.hasError {
+    border-bottom-color: #FF0000;
+  }
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+
+  > .search > svg {
+    transform: rotate(90deg);
+  }
+}
+
+.input {
+  font-weight: 500;
+  font-size: 14px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  width: 100%;
+
+  &::placeholder {
+    font-weight: 500;
+    font-size: 14px;
+    color: #1D252E;
+  }
+}
+
+.error {
+  font-weight: 300;
+  font-size: 10px;
+  color: #FF0000;
+}

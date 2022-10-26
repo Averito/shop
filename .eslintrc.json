@@ -1,3 +1,47 @@
 {
-  "extends": "next/core-web-vitals"
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest": true
+  },
+  "root": true,
+  "extends": [
+    "eslint:recommended",
+    "prettier",
+    "next"
+  ],
+  "plugins": [
+    "prettier"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 11,
+    "sourceType": "module"
+  },
+  "rules": {
+    "prettier/prettier": [
+      "warn",
+      {
+        "arrowParens": "avoid",
+        "useTabs": true,
+        "singleQuote": true,
+        "tabWidth": 2,
+        "jsxSingleQuote": true,
+        "trailingComma": "none",
+        "semi": false,
+        "endOfLine": "auto",
+        "bracketSpacing": true,
+        "bracketSameLine": false,
+        "proseWrap": "never"
+      }
+    ],
+    "react/prop-types": 0,
+    "react/display-name": 0,
+    "react-hooks/exhaustive-deps": 0,
+    "no-console": "warn",
+    "complexity": "error",
+    "no-unused-vars": 0
+  }
 }

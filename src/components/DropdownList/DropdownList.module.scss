@@ -1,0 +1,18 @@
+.dropdownItemWrapper {
+  &:not(:last-of-type) {
+    margin-bottom: 12px;
+  }
+}
+
+.nestedDropdownItems {
+  margin-top: 0;
+  height: fit-content;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease;
+
+  &.opened {
+    margin-top: 12px;
+    max-height: 400px;
+  }
+}

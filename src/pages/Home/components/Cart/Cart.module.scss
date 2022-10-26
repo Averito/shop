@@ -1,0 +1,165 @@
+.wrapper {
+  position: fixed;
+  bottom: -100%;
+  right: 0;
+  background: #FFFFFF;
+  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.15);
+  border-radius: 20px 0 0 0;
+  max-height: 600px;
+  overflow: hidden auto;
+  transition: bottom 0.3s ease;
+  padding: 28px 83px;
+  width: 520px;
+
+  &.fill {
+    bottom: 0;
+  }
+
+  &.opened {
+    bottom: 0;
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #0084CA;
+  margin-bottom: 19px;
+}
+
+.cartInfo {
+  > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    > p:first-of-type {
+      font-size: 18px;
+    }
+
+    &:not(:last-of-type) {
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  &.cartOpened {
+    transform: rotate(180deg);
+  }
+}
+
+.infoAboutProducts {
+  height: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+
+  &.opened {
+    max-height: 400px;
+    overflow: unset;
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.categoryName {
+  font-size: 16px;
+  color: #0084CA;
+}
+
+.simpleText {
+  line-height: 21px;
+}
+
+.boldText {
+  font-weight: 700;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+}
+
+.categoryName, .simpleText {
+  font-weight: 400;
+}
+
+.simpleText , .boldText {
+  font-size: 14px;
+  color: #1D252E;
+}
+
+.cartCategoryTitle {
+  font-weight: 400;
+  font-size: 16px;
+  color: #0084CA;
+  margin-bottom: 12px;
+
+  &:first-of-type {
+    margin-top: 44px;
+  }
+}
+
+.cartCategoryItem {
+  position: relative;
+
+  &:last-of-type {
+    margin-bottom: 29px;
+  }
+
+  > .cartCategoryItemLine {
+    width: 100%;
+    height: 1px;
+    background-color: #B0B0B0;
+
+    &:first-of-type {
+      width: 93%;
+      margin: 0 22px 11px 0;
+    }
+  }
+}
+
+.removeButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.cartCategoryItemInfo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 19px;
+  padding: 0 20px 0 0;
+
+  > div:last-of-type {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    > p {
+      margin-bottom: 16px;
+    }
+  }
+
+
+
+  &:last-of-type {
+    margin-bottom: 60px;
+  }
+}
+
+.buttonBuy {
+  display: flex;
+  justify-content: center;
+}

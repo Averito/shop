@@ -1,0 +1,22 @@
+.nestedDropdownItem {
+  padding: 3px 8px;
+  color: #1D252E;
+  background-color: transparent;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  width: fit-content;
+  border-radius: 6px;
+
+  &:hover {
+    background-color: #eae9e9;
+  }
+
+  &.nestedDropdownItemSelected {
+    background-color: #eae9e9;
+  }
+
+  &.nestedDropdownItemDisabled {
+    background-color: transparent;
+    color: #7E7E7E;
+  }
+}
